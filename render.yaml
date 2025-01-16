@@ -3,7 +3,6 @@ services:
   - type: web
     name: tempemail-api
     env: node
-    plan: free
     buildCommand: npm install
     startCommand: node server/proxy.js
     envVars:
@@ -13,12 +12,10 @@ services:
         value: 10000
 
   # Frontend static site
-  - type: web
+  - type: static
     name: tempemail-frontend
-    env: static
-    plan: free
     buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
+    publishDir: dist
     envVars:
       - key: VITE_PRODUCTION_API_URL
         value: https://tempemail-api.onrender.com/api
