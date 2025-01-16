@@ -8,14 +8,17 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+    plan: free
 
-  # Frontend static site (free tier)
-  - type: static
+  # Frontend site (free tier)
+  - type: web
     name: tempemail-frontend
+    env: static
     buildCommand: npm install && npm run build
-    publishPath: dist
+    staticPublishPath: dist
     envVars:
       - key: VITE_PRODUCTION_API_URL
         value: https://tempemail-api.onrender.com/api
       - key: NODE_ENV
-        value: production 
+        value: production
+    plan: free 
