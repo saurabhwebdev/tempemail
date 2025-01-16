@@ -8,7 +8,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-    plan: free
 
   # Frontend site (free tier)
   - type: web
@@ -20,5 +19,4 @@ services:
       - key: VITE_PRODUCTION_API_URL
         value: https://tempemail-api.onrender.com/api
       - key: NODE_ENV
-        value: production
-    plan: free 
+        value: production 
