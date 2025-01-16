@@ -292,31 +292,31 @@ function EmailBox() {
         </div>
 
         <div className="faq-section">
-          <h2>Why do we need a temp mail address?</h2>
+          <h2>Why use BlinkMail?</h2>
           <p>
-            Websites and online services often require a valid email address to register, access or receive protected content, etc. However, the problem is that some of these websites may use our email addresses to send unwanted messages.
+            Need a quick email address for signing up or testing? BlinkMail generates secure, disposable email addresses in a blink. Perfect for protecting your privacy and keeping your main inbox spam-free.
           </p>
           
           <div className="faq-items">
             <div className="faq-item" onClick={() => setExpandedFaq(expandedFaq === 'what' ? null : 'what')}>
               <div className="faq-question">
-                What's a temp mail and how does it work?
+                What's BlinkMail and how does it work?
                 <span className={expandedFaq === 'what' ? 'expanded' : ''}>›</span>
               </div>
               {expandedFaq === 'what' && (
                 <div className="faq-answer">
-                  A temporary email (temp mail) is a disposable email service that creates a temporary email address that self-destructs after a set period. It works by providing you with an instant email address that you can use to receive emails, without revealing your personal email address. Our service automatically deletes the address and all associated emails after one hour for your privacy.
+                  BlinkMail is an instant temporary email service that creates disposable email addresses that self-destruct after a set period. It works by providing you with an instant email address that you can use to receive emails, without revealing your personal email address. Our service automatically deletes the address and all associated emails after one hour for your privacy.
                 </div>
               )}
             </div>
             <div className="faq-item" onClick={() => setExpandedFaq(expandedFaq === 'where' ? null : 'where')}>
               <div className="faq-question">
-                Where can I use a temp mail?
+                Where can I use BlinkMail?
                 <span className={expandedFaq === 'where' ? 'expanded' : ''}>›</span>
               </div>
               {expandedFaq === 'where' && (
                 <div className="faq-answer">
-                  Temp mail is perfect for:
+                  BlinkMail is perfect for:
                   <ul>
                     <li>Signing up for free trials or services</li>
                     <li>Downloading digital content that requires email verification</li>
@@ -329,12 +329,12 @@ function EmailBox() {
             </div>
             <div className="faq-item" onClick={() => setExpandedFaq(expandedFaq === 'how' ? null : 'how')}>
               <div className="faq-question">
-                How to use disposable email?
+                How to use BlinkMail?
                 <span className={expandedFaq === 'how' ? 'expanded' : ''}>›</span>
               </div>
               {expandedFaq === 'how' && (
                 <div className="faq-answer">
-                  Using our temp mail service is simple:
+                  Using BlinkMail is simple:
                   <ol>
                     <li>Click the "Generate Email Address" button to get a unique email address</li>
                     <li>Copy the email address using the copy button</li>

@@ -5,11 +5,11 @@ function PrivacyPolicy() {
   return (
     <LegalPage 
       title="Privacy Policy" 
-      description="Learn about how TempMailo collects, uses, and protects your personal information. Our privacy policy explains our commitment to data protection and user privacy."
+      description="Learn about how BlinkMail collects, uses, and protects your personal information. Our privacy policy explains our commitment to data protection and user privacy."
     >
       <div className="legal-section">
         <h2>1. Information We Collect</h2>
-        <p>TempMailo is designed with privacy in mind. We collect minimal information necessary to provide our temporary email service:</p>
+        <p>BlinkMail is designed with privacy in mind. We collect minimal information necessary to provide our temporary email service:</p>
         <ul>
           <li>Temporary email addresses generated through our service</li>
           <li>Email messages received during the active period</li>

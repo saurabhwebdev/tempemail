@@ -5,7 +5,7 @@ function ContactPage({ title, description, children }) {
   return (
     <>
       <Helmet>
-        <title>{title} - TempMailo</title>
+        <title>{title} - BlinkMail</title>
         <meta name="description" content={description} />
       </Helmet>
 
@@ -22,7 +22,7 @@ function ContactPage({ title, description, children }) {
         <section className="contact-footer">
           <p>Need immediate assistance?</p>
           <div className="contact-info">
-            <p>Email: support@tempmailbox.com</p>
+            <p>Email: support@blinkmail.xyz</p>
             <p>Response Time: Within 24 hours</p>
           </div>
         </section>

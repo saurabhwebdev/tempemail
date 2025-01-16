@@ -8,7 +8,28 @@ function Layout({ children }) {
       <header>
         <div className="logo">
           <Link to="/">
-            <h1>TempMailo</h1>
+            <svg 
+              className="logo-icon" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                d="M19,4 L5,4 C3.89543,4 3,4.89543 3,6 L3,18 C3,19.1046 3.89543,20 5,20 L19,20 C20.1046,20 21,19.1046 21,18 L21,6 C21,4.89543 20.1046,4 19,4 Z" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round"
+              />
+              <path 
+                d="M3,6 L10.5858,13.5858 C11.3668,14.3668 12.6332,14.3668 13.4142,13.5858 L21,6" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round"
+              />
+            </svg>
+            <h1>BlinkMail</h1>
           </Link>
         </div>
         <nav className="main-nav">
@@ -25,13 +46,13 @@ function Layout({ children }) {
       <footer>
         <div className="footer-content">
           <div className="footer-section">
-            <h3>About TempMailo</h3>
-            <p>TempMailo provides secure, disposable email addresses for your temporary email needs. Protect your privacy and avoid spam while maintaining your online presence.</p>
+            <h3>About BlinkMail</h3>
+            <p>BlinkMail provides instant, disposable email addresses for your temporary email needs. Protect your privacy and avoid spam while maintaining your online presence.</p>
             <div className="social-links">
-              <a href="#" aria-label="Twitter"><TwitterIcon /></a>
-              <a href="#" aria-label="Facebook"><FacebookIcon /></a>
-              <a href="#" aria-label="Reddit"><RedditIcon /></a>
-              <a href="#" aria-label="Share"><ShareIcon /></a>
+              <a href="https://twitter.com/blinkmailxyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><TwitterIcon /></a>
+              <a href="https://facebook.com/blinkmailxyz" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FacebookIcon /></a>
+              <a href="https://reddit.com/r/blinkmail" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><RedditIcon /></a>
+              <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out BlinkMail - Generate secure, temporary email addresses in a blink! 📧✨')}&url=${encodeURIComponent('https://blinkmail.xyz')}`} target="_blank" rel="noopener noreferrer" aria-label="Share"><ShareIcon /></a>
             </div>
           </div>
           
@@ -59,7 +80,7 @@ function Layout({ children }) {
             <h3>Contact</h3>
             <ul className="footer-links">
               <li><Link to="/support">Support</Link></li>
-              <li><Link to="/report">Report Abuse</Link></li>
+              <li><Link to="/report-abuse">Report Abuse</Link></li>
               <li><Link to="/partnerships">Partnerships</Link></li>
               <li><Link to="/api">API Access</Link></li>
             </ul>
@@ -67,7 +88,7 @@ function Layout({ children }) {
         </div>
         
         <div className="footer-bottom">
-          <p>Copyright ©{new Date().getFullYear()} TempMailo. All rights reserved.</p>
+          <p>Copyright ©{new Date().getFullYear()} BlinkMail. All rights reserved.</p>
         </div>
       </footer>
     </div>

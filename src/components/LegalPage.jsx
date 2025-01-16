@@ -5,7 +5,7 @@ function LegalPage({ title, description, children }) {
   return (
     <>
       <Helmet>
-        <title>{title} - TempMailo</title>
+        <title>{title} - BlinkMail</title>
         <meta name="description" content={description} />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
@@ -23,7 +23,7 @@ function LegalPage({ title, description, children }) {
         <section className="legal-footer">
           <p>If you have any questions about these policies, please contact us:</p>
           <div className="contact-info">
-            <p>Email: legal@tempmailbox.com</p>
+            <p>Email: legal@blinkmail.xyz</p>
             <p>Address: [Your Business Address]</p>
           </div>
         </section>

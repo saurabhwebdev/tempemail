@@ -1,0 +1,25 @@
+# www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Disallow temporary email pages and API endpoints
+Disallow: /email/*
+Disallow: /api/*
+
+# Allow important pages
+Allow: /how-it-works
+Allow: /features
+Allow: /faq
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+Allow: /gdpr
+Allow: /support
+Allow: /partnerships
+
+# Sitemap
+Sitemap: https://tempmailbox.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1 

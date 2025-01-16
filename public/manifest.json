@@ -1,0 +1,74 @@
+{
+  "name": "BlinkMail - Instant Temporary Email Service",
+  "short_name": "BlinkMail",
+  "description": "Generate secure, temporary email addresses in a blink. Perfect for testing, privacy, and avoiding spam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2196f3",
+  "theme_color": "#2196f3",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["utilities", "productivity", "security"],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Home screen of BlinkMail"
+    },
+    {
+      "src": "/screenshots/inbox.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Inbox view of BlinkMail"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Generate Email",
+      "short_name": "New Email",
+      "description": "Generate a new temporary email address",
+      "url": "/?action=generate",
+      "icons": [{ "src": "/shortcuts/generate.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Check Inbox",
+      "short_name": "Inbox",
+      "description": "View your temporary email inbox",
+      "url": "/?action=inbox",
+      "icons": [{ "src": "/shortcuts/inbox.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+} 
